@@ -1,0 +1,110 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0Njg4MjZ8MHwxfGFsbHwxfHx8fHx8fHwxNjc0ODc5NDg2fA&ixlib=rb-4.0.3&q=80&w=1080') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+  }
+  
+  .login-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); /* Glass effect */
+    border-radius: 12px;
+    padding: 40px;
+    width: 350px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .login-form p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  .input-group input:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(100, 149, 237, 0.8);
+    border: 2px solid #6e8efb;
+  }
+  
+  .btn-login {
+    width: 100%;
+    background-color: #6e8efb;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-login:hover {
+    background-color: #a777e3;
+    transform: translateY(-2px);
+  }
+  
+  .forgot-password {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .forgot-password a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .forgot-password a:hover {
+    color: #6e8efb;
+  }
+  
+  /* Responsive */
+  @media (max-width: 400px) {
+    .login-container {
+      width: 90%;
+      padding: 30px;
+    }
+  
+    .input-group input {
+      padding: 12px;
+      font-size: 14px;
+    }
+  
+    .btn-login {
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+  

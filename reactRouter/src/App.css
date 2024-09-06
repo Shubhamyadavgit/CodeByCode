@@ -1,0 +1,86 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* Styling for the Navbar */
+.navbar {
+  display: flex;
+  justify-content: center; /* Centers the nav items horizontally */
+  align-items: center;     /* Centers items vertically */
+  padding: 10px 20px;      /* Adds more padding for better spacing */
+  background-color: #333;  /* Dark background for the navbar */
+  position: fixed;         /* Fixes the navbar at the top */
+  top: 0;                  /* Sticks the navbar at the top of the page */
+  left: 0;
+  width: 100%;             /* Spans the navbar across the full width of the page */
+  z-index: 1000;           /* Ensures the navbar is always on top of other elements */
+}
+
+.navbar .active{
+  color: greenyellow;
+}
+
+.navbar ul {
+  display: flex;           /* Displays the list items in a row */
+  list-style: none;        /* Removes bullet points from the list */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;          /* Adds space between the nav items */
+}
+
+.navbar a {
+  color: white;            /* White text color for the links */
+  text-decoration: none;   /* Removes the underline */
+  font-size: 18px;         /* Adjusts the font size for readability */
+  transition: color 0.3s;  /* Smooth transition when hovering */
+}
+
+.navbar a:hover {
+  color: #6e8efb;          /* Changes the color on hover */
+}
+
+/* Adds space at the top to prevent content from being hidden under the navbar */
+body {
+  margin-top: 60px;        /* Ensures content starts below the navbar */
+}
